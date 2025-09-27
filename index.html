@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - Quran Player</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #4b5563;
+            background-color: #f6f7fb;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2563eb 0%, #3b82f6 100%);
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+            border-radius: 16px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 30px rgba(37, 99, 235, 0.3);
+        }
+
+        .header h1 {
+            font-size: 2.5em;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+
+        .last-updated {
+            background: #f3f4f6;
+            padding: 15px;
+            border-radius: 8px;
+            text-align: center;
+            font-style: italic;
+            margin-bottom: 30px;
+            border-left: 4px solid #2563eb;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            margin-bottom: 20px;
+            border-radius: 12px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section h2 {
+            color: #0f172a;
+            font-size: 1.5em;
+            font-weight: 700;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        .section h3 {
+            color: #374151;
+            font-size: 1.2em;
+            font-weight: 600;
+            margin: 20px 0 10px 0;
+        }
+
+        .section p {
+            font-size: 1em;
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .section ul {
+            margin: 15px 0;
+            padding-left: 20px;
+        }
+
+        .section li {
+            margin-bottom: 8px;
+        }
+
+        .highlight-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-left: 4px solid #2563eb;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 8px;
+        }
+
+        .contact-info {
+            background: #f0f9ff;
+            border: 1px solid #0369a1;
+            padding: 20px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+
+        .contact-info h4 {
+            color: #0369a1;
+            margin-bottom: 15px;
+        }
+
+        .contact-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+            font-weight: 500;
+        }
+
+        .contact-item span {
+            margin-right: 10px;
+            font-size: 1.2em;
+        }
+
+        .footer {
+            background: #e0f2fe;
+            color: #0369a1;
+            text-align: center;
+            padding: 30px;
+            border-radius: 12px;
+            margin-top: 30px;
+            font-style: italic;
+            border: 1px solid #0369a1;
+        }
+
+        .toc {
+            background: white;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 30px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .toc h3 {
+            color: #0f172a;
+            margin-bottom: 15px;
+        }
+
+        .toc ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .toc li {
+            padding: 8px 0;
+            border-bottom: 1px solid #f3f4f6;
+        }
+
+        .toc li:last-child {
+            border-bottom: none;
+        }
+
+        .toc a {
+            color: #2563eb;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .toc a:hover {
+            color: #1d4ed8;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+
+            .header {
+                padding: 30px 15px;
+            }
+
+            .header h1 {
+                font-size: 2em;
+            }
+
+            .section {
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <div class="header">
+            <h1>🕌 Privacy Policy</h1>
+            <p>Quran Player - Your Privacy, Our Commitment</p>
+        </div>
+
+        <!-- Last Updated -->
+        <div class="last-updated">
+            <strong>Last Updated:</strong> <span id="lastUpdated"></span>
+        </div>
+
+        <!-- Table of Contents -->
+        <div class="toc">
+            <h3>📋 Table of Contents</h3>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#information-collect">Information We Collect</a></li>
+                <li><a href="#how-we-use">How We Use Your Information</a></li>
+                <li><a href="#data-storage">Data Storage and Security</a></li>
+                <li><a href="#third-party">Third-Party Services</a></li>
+                <li><a href="#your-rights">Your Rights and Choices</a></li>
+                <li><a href="#children">Children's Privacy</a></li>
+                <li><a href="#international">International Users</a></li>
+                <li><a href="#changes">Changes to This Policy</a></li>
+                <li><a href="#contact">Contact Us</a></li>
+            </ul>
+        </div>
+
+        <!-- Introduction -->
+        <div class="section" id="introduction">
+            <h2>📖 Introduction</h2>
+            <p>
+                Welcome to Quran Player ("we," "our," or "us"). We are committed to protecting your privacy and ensuring the security of your personal information. This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you use our mobile application.
+            </p>
+            <p>
+                By using our app, you consent to the data practices described in this policy. We believe in transparency and want you to feel confident about how your information is handled while you enjoy your spiritual journey with our app.
+            </p>
+        </div>
+
+        <!-- Information We Collect -->
+        <div class="section" id="information-collect">
+            <h2>📊 Information We Collect</h2>
+            
+            <h3>Information You Provide</h3>
+            <ul>
+                <li>App settings and preferences (playback speed, auto-play settings)</li>
+                <li>Downloaded content selections</li>
+                <li>Usage preferences and customizations</li>
+                <li>Bookmark and favorite surah selections</li>
+            </ul>
+
+            <h3>Automatically Collected Information</h3>
+            <ul>
+                <li>Device information (model, operating system version)</li>
+                <li>App usage statistics (which surahs are played most frequently)</li>
+                <li>Technical data (app crashes, performance metrics)</li>
+                <li>Network information (for audio streaming purposes)</li>
+            </ul>
+
+            <div class="highlight-box">
+                <h3>✅ Information We Do NOT Collect</h3>
+                <ul>
+                    <li>Personal identification information (name, email, phone number)</li>
+                    <li>Location data or GPS information</li>
+                    <li>Contacts or other personal data</li>
+                    <li>Audio recordings or microphone access</li>
+                    <li>Camera or photo access</li>
+                    <li>Social media accounts or external profiles</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- How We Use Information -->
+        <div class="section" id="how-we-use">
+            <h2>🎯 How We Use Your Information</h2>
+            <p>We use the collected information to:</p>
+            <ul>
+                <li><strong>Provide and maintain</strong> the app functionality</li>
+                <li><strong>Remember</strong> your preferences and settings across sessions</li>
+                <li><strong>Improve</strong> app performance and user experience</li>
+                <li><strong>Analyze</strong> usage patterns to enhance features</li>
+                <li><strong>Provide</strong> technical support and troubleshooting</li>
+                <li><strong>Ensure</strong> app security and prevent misuse</li>
+                <li><strong>Deliver</strong> relevant content recommendations</li>
+            </ul>
+        </div>
+
+        <!-- Data Storage and Security -->
+        <div class="section" id="data-storage">
+            <h2>🔒 Data Storage and Security</h2>
+            
+            <h3>Local Storage</h3>
+            <ul>
+                <li>App settings are stored locally on your device</li>
+                <li>Downloaded audio files are stored on your device's storage</li>
+                <li>No personal data is transmitted to external servers</li>
+                <li>You have full control over your local data</li>
+            </ul>
+
+            <h3>Security Measures</h3>
+            <ul>
+                <li>All data transmission uses encrypted connections (HTTPS/TLS)</li>
+                <li>Local data is protected by your device's security features</li>
+                <li>We implement industry-standard security practices</li>
+                <li>Regular security updates and monitoring</li>
+                <li>No storage of sensitive data on external servers</li>
+            </ul>
+        </div>
+
+        <!-- Third-Party Services -->
+        <div class="section" id="third-party">
+            <h2>🤝 Third-Party Services</h2>
+            <p>Our app may use third-party services for:</p>
+            <ul>
+                <li><strong>Audio content delivery</strong> (Archive.org and similar platforms)</li>
+                <li><strong>App analytics</strong> and crash reporting (anonymized data only)</li>
+                <li><strong>App store services</strong> (Google Play, Apple App Store)</li>
+                <li><strong>Content distribution networks</strong> for faster audio streaming</li>
+            </ul>
+            <p>
+                These services have their own privacy policies, and we encourage you to review them. We do not share your personal information with these services beyond what is necessary for app functionality.
+            </p>
+        </div>
+
+        <!-- Your Rights -->
+        <div class="section" id="your-rights">
+            <h2>⚖️ Your Rights and Choices</h2>
+            <p>You have the right to:</p>
+            <ul>
+                <li><strong>Access</strong> your data stored in the app</li>
+                <li><strong>Delete</strong> your data by uninstalling the app</li>
+                <li><strong>Reset</strong> app settings to default values</li>
+                <li><strong>Control</strong> which content you download</li>
+                <li><strong>Opt-out</strong> of analytics (where technically feasible)</li>
+                <li><strong>Request</strong> information about data processing</li>
+            </ul>
+            
+            <div class="highlight-box">
+                <h4>How to Exercise Your Rights:</h4>
+                <ul>
+                    <li>Use the app's settings to modify preferences</li>
+                    <li>Clear app data through your device settings</li>
+                    <li>Uninstall the app to remove all local data</li>
+                    <li>Contact us for specific data requests</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Children's Privacy -->
+        <div class="section" id="children">
+            <h2>👶 Children's Privacy</h2>
+            <p>
+                Our app is suitable for users of all ages, including children, as it provides educational and spiritual content. We do not knowingly collect personal information from children under 13.
+            </p>
+            <p>
+                If you are a parent or guardian and believe your child has provided us with personal information, please contact us so we can delete such information. We are committed to protecting children's privacy online.
+            </p>
+        </div>
+
+        <!-- International Users -->
+        <div class="section" id="international">
+            <h2>🌍 International Users</h2>
+            <p>
+                Our app is available worldwide and serves Muslims globally. If you are using our app from outside your country of residence, please note that you may be transferring your information across international borders.
+            </p>
+            <p>
+                By using our app, you consent to such transfers in accordance with this privacy policy and applicable data protection laws in your jurisdiction.
+            </p>
+        </div>
+
+        <!-- Changes to Privacy Policy -->
+        <div class="section" id="changes">
+            <h2>📝 Changes to This Privacy Policy</h2>
+            <p>We may update this Privacy Policy from time to time to reflect changes in our practices or for legal, regulatory, or operational reasons.</p>
+            
+            <h3>How We'll Notify You:</h3>
+            <ul>
+                <li>Posting the new Privacy Policy in the app</li>
+                <li>Updating the "Last updated" date</li>
+                <li>Providing in-app notifications for significant changes</li>
+                <li>Email notifications (if you've provided contact information)</li>
+            </ul>
+            
+            <p>
+                Your continued use of the app after changes are posted constitutes your acceptance of the updated policy.
+            </p>
+        </div>
+
+        <!-- Contact Information -->
+        <div class="section" id="contact">
+            <h2>📞 Contact Us</h2>
+            <p>
+                If you have any questions about this Privacy Policy, our data practices, or need support, please don't hesitate to contact us:
+            </p>
+            
+            <div class="contact-info">
+                <h4>Get in Touch</h4>
+                <div class="contact-item">
+                    <span>📧</span>
+                    <strong>Email:</strong> privacy@quranplayer.app
+                </div>
+                <div class="contact-item">
+                    <span>🌐</span>
+                    <strong>Website:</strong> www.quranplayer.app
+                </div>
+                <div class="contact-item">
+                    <span>📱</span>
+                    <strong>App Store:</strong> Leave a review with your questions
+                </div>
+                <div class="contact-item">
+                    <span>💬</span>
+                    <strong>Response Time:</strong> We typically respond within 48 hours
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>
+                This privacy policy demonstrates our commitment to protecting your privacy while providing you with a meaningful spiritual experience through our Quran Player app. Thank you for trusting us with your journey in learning and listening to the Holy Quran.
+            </p>
+            <p style="margin-top: 15px;">
+                <strong>Made with ❤️ for the Muslim community worldwide</strong>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Set the last updated date to today
+        document.getElementById('lastUpdated').textContent = new Date().toLocaleDateString('en-US', {
+            year: 'numeric',
+            month: 'long',
+            day: 'numeric'
+        });
+
+        // Smooth scrolling for table of contents links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const target = document.querySelector(this.getAttribute('href'));
+                if (target) {
+                    target.scrollIntoView({
+                        behavior: 'smooth',
+                        block: 'start'
+                    });
+                }
+            });
+        });
+    </script>
+</body>
+</html>
